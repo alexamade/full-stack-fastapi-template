@@ -2,29 +2,68 @@
 
 ## Latest Changes
 
-### Features
+### Fixes
 
-* ✨ Add private, local only, API for usage in E2E tests. PR [#1429](https://github.com/fastapi/full-stack-fastapi-template/pull/1429) by [@patrick91](https://github.com/patrick91).
-* ✨ Migrate to latest openapi-ts. PR [#1430](https://github.com/fastapi/full-stack-fastapi-template/pull/1430) by [@patrick91](https://github.com/patrick91).
+* 🐛 Close sidebar drawer on user selection. PR [#1515](https://github.com/fastapi/full-stack-fastapi-template/pull/1515) by [@dtellz](https://github.com/dtellz).
+* 🐛 Fix required password validation when editing user fields. PR [#1508](https://github.com/fastapi/full-stack-fastapi-template/pull/1508) by [@jpizquierdo](https://github.com/jpizquierdo).
 
 ### Refactors
 
+* ♻️ Remove redundant field in inherited class. PR [#1520](https://github.com/fastapi/full-stack-fastapi-template/pull/1520) by [@tzway](https://github.com/tzway).
+* 🎨 Add minor UI tweaks in Skeletons and other components. PR [#1507](https://github.com/fastapi/full-stack-fastapi-template/pull/1507) by [@alejsdev](https://github.com/alejsdev).
+* 🎨 Add minor UI tweaks. PR [#1506](https://github.com/fastapi/full-stack-fastapi-template/pull/1506) by [@alejsdev](https://github.com/alejsdev).
+
+### Internal
+
+* 🔧  Add npm and docker package ecosystems to Dependabot configuration. PR [#1535](https://github.com/fastapi/full-stack-fastapi-template/pull/1535) by [@alejsdev](https://github.com/alejsdev).
+
+## 0.8.0
+
+### Features
+
+* 🛂 Migrate to Chakra UI v3 . PR [#1496](https://github.com/fastapi/full-stack-fastapi-template/pull/1496) by [@alejsdev](https://github.com/alejsdev).
+* ✨ Add private, local only, API for usage in E2E tests. PR [#1429](https://github.com/fastapi/full-stack-fastapi-template/pull/1429) by [@patrick91](https://github.com/patrick91).
+* ✨ Migrate to latest openapi-ts. PR [#1430](https://github.com/fastapi/full-stack-fastapi-template/pull/1430) by [@patrick91](https://github.com/patrick91).
+
+### Fixes
+
+* 🧑‍🔧 Replace correct value for 'htmlFor'. PR [#1456](https://github.com/fastapi/full-stack-fastapi-template/pull/1456) by [@wesenbergg](https://github.com/wesenbergg).
+
+### Refactors
+
+* ♻️ Redirect the user to `login` if we get 401/403. PR [#1501](https://github.com/fastapi/full-stack-fastapi-template/pull/1501) by [@alejsdev](https://github.com/alejsdev).
+* 🐛 Refactor reset password test to create normal user instead of using super user. PR [#1499](https://github.com/fastapi/full-stack-fastapi-template/pull/1499) by [@alejsdev](https://github.com/alejsdev).
+* ♻️ Replace email types from `str` to `EmailStr` in `config.py`. PR [#1492](https://github.com/fastapi/full-stack-fastapi-template/pull/1492) by [@jpizquierdo](https://github.com/jpizquierdo).
+* 🔧 Remove unused context from router creation. PR [#1498](https://github.com/fastapi/full-stack-fastapi-template/pull/1498) by [@alejsdev](https://github.com/alejsdev).
+* ♻️ Remove redundant item deletion code leveraging cascade delete. PR [#1481](https://github.com/fastapi/full-stack-fastapi-template/pull/1481) by [@nauanbek](https://github.com/nauanbek).
+* ✏️ Fix a couple of spelling mistakes. PR [#1485](https://github.com/fastapi/full-stack-fastapi-template/pull/1485) by [@rjmunro](https://github.com/rjmunro).
 * 🎨 Move `prefix` and `tags` to routers. PR [#1439](https://github.com/fastapi/full-stack-fastapi-template/pull/1439) by [@patrick91](https://github.com/patrick91).
 * ♻️ Remove modify id script in favor of openapi-ts config. PR [#1434](https://github.com/fastapi/full-stack-fastapi-template/pull/1434) by [@patrick91](https://github.com/patrick91).
-* 👷 Improve Playwright CI speed: sharding (paralel runs), run in Docker to use cache, use env vars. PR [#1405](https://github.com/fastapi/full-stack-fastapi-template/pull/1405) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Improve Playwright CI speed: sharding (parallel runs), run in Docker to use cache, use env vars. PR [#1405](https://github.com/fastapi/full-stack-fastapi-template/pull/1405) by [@tiangolo](https://github.com/tiangolo).
 * ♻️ Add PaginationFooter component. PR [#1381](https://github.com/fastapi/full-stack-fastapi-template/pull/1381) by [@saltie2193](https://github.com/saltie2193).
 * ♻️ Refactored code to use encryption algorithm name from settings for consistency. PR [#1160](https://github.com/fastapi/full-stack-fastapi-template/pull/1160) by [@sameeramin](https://github.com/sameeramin).
 * 🔊 Enable logging for email utils by default. PR [#1374](https://github.com/fastapi/full-stack-fastapi-template/pull/1374) by [@ihmily](https://github.com/ihmily).
 * 🔧 Add `ENV PYTHONUNBUFFERED=1` to log output directly to Docker. PR [#1378](https://github.com/fastapi/full-stack-fastapi-template/pull/1378) by [@tiangolo](https://github.com/tiangolo).
 * 💡 Remove unnecessary comment. PR [#1260](https://github.com/fastapi/full-stack-fastapi-template/pull/1260) by [@sebhani](https://github.com/sebhani).
 
+### Upgrades
+
+* ⬆️ Update Dockerfile to use uv version 0.5.11. PR [#1454](https://github.com/fastapi/full-stack-fastapi-template/pull/1454) by [@alejsdev](https://github.com/alejsdev).
+
 ### Docs
 
+* 📝 Removing deprecated manual client SDK step. PR [#1494](https://github.com/fastapi/full-stack-fastapi-template/pull/1494) by [@chandy](https://github.com/chandy).
+* 📝 Update Frontend README.md. PR [#1462](https://github.com/fastapi/full-stack-fastapi-template/pull/1462) by [@getmarkus](https://github.com/getmarkus).
+* 📝 Update `frontend/README.md` to also remove Playwright when removing Frontend. PR [#1452](https://github.com/fastapi/full-stack-fastapi-template/pull/1452) by [@youben11](https://github.com/youben11).
 * 📝 Update `deployment.md`, instructions to install GitHub Runner in non-root VMs. PR [#1412](https://github.com/fastapi/full-stack-fastapi-template/pull/1412) by [@tiangolo](https://github.com/tiangolo).
 * 📝 Add MailCatcher to `development.md`. PR [#1387](https://github.com/fastapi/full-stack-fastapi-template/pull/1387) by [@tobiase](https://github.com/tobiase).
 
 ### Internal
 
+* 🔧 Configure path alias for cleaner imports. PR [#1497](https://github.com/fastapi/full-stack-fastapi-template/pull/1497) by [@alejsdev](https://github.com/alejsdev).
+* Bump vite from 5.0.13 to 5.4.14 in /frontend. PR [#1469](https://github.com/fastapi/full-stack-fastapi-template/pull/1469) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump astral-sh/setup-uv from 4 to 5. PR [#1453](https://github.com/fastapi/full-stack-fastapi-template/pull/1453) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump astral-sh/setup-uv from 3 to 4. PR [#1433](https://github.com/fastapi/full-stack-fastapi-template/pull/1433) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump tiangolo/latest-changes from 0.3.1 to 0.3.2. PR [#1418](https://github.com/fastapi/full-stack-fastapi-template/pull/1418) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * 👷 Update issue manager workflow. PR [#1398](https://github.com/fastapi/full-stack-fastapi-template/pull/1398) by [@alejsdev](https://github.com/alejsdev).
 * 👷 Fix smokeshow, checkout files on CI. PR [#1395](https://github.com/fastapi/full-stack-fastapi-template/pull/1395) by [@tiangolo](https://github.com/tiangolo).
